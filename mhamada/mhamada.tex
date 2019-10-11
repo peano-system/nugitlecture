@@ -1,5 +1,38 @@
 \documentclass{jsarticle}
+\usepackage{amsmath}
 
 \begin{document}
-Hello, world!
+\section{平成３１年度名古屋大学文系大問２（1）の解答}
+$n=0$のとき，$\text{P}_0$の座標が$(1,0)$なので
+\[
+\begin{cases}
+x_1&=x_0-k(y_0+y_1) \\
+y_1&=y_0+k(x_0+x_1)
+\end{cases}
+\text{すなわち}
+\begin{cases}
+x_1&=1-ky_1 \\
+y_1&=k(1+x_1)
+\end{cases}
+\]
+である．これより
+\[
+\begin{cases}
+ky_1=1-x_1 \\
+ky_1=k^2(1+x_1)
+\end{cases}
+\]
+であるから
+\[
+1-x_1=k^2(1+x_1)
+\text{ゆえに}
+x_1=\frac{1-k^2}{1+k^2}
+\]
+が導かれる．さらに
+\[
+ky_1=1-\frac{1-k^2}{1+k^2}=\frac{2k^2}{1+k^2}
+\text{ゆえに}
+y_1=\frac{2k}{1+k^2}
+\]
+である．
 \end{document}
