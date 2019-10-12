@@ -1,0 +1,14 @@
+My Hints
+
+区分求積法-不等式
+https://math.nakaken88.com/textbook/standard-definite-integral-and-inequality-sum/
+https://math.nakaken88.com/textbook/basic-definite-integral-and-inequality/
+
+TeXでのグラフ描画基礎
+https://hitgot.org/archives/drawing-in-tex-by-tikz-2/
+https://hitgot.org/archives/drawing-in-tex-by-tikz-3/
+https://note.kaigojob.com/okami_room/n/n3e45556f4496
+https://ja.overleaf.com/read/qcyxgbhztmkt
+
+TeXでグラフ描画の詳細なお話
+https://ja.overleaf.com/read/qcyxgbhztmkt
