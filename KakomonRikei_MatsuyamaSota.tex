@@ -1,0 +1,51 @@
+\documentclass[a4j, 11pt]{jarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\begin{document}
+\section*{2}
+% (2)
+\subsection*{(2)}
+$\frac{\pi}{2} < \angle B'AC' < \pi$のとき, $\cos \angle B'AC < 0$なので,
+$\overrightarrow{AB'} \cdot \overrightarrow{AC'} < 0$
+であることを示せば良い.
+\begin{align*}
+	&\quad \overrightarrow{AB'} \cdot \overrightarrow{AC'} \\
+	%
+	&= (\overrightarrow{AB} + \overrightarrow{BB'}) \cdot
+	(\overrightarrow{AC} + \overrightarrow{CC'}) \\
+	%
+	&= \overrightarrow{AB} \cdot \overrightarrow{AC}
+	+ \overrightarrow{AB} \cdot \overrightarrow{CC'}
+	+ \overrightarrow{BB'} \cdot \overrightarrow{AC}
+	+ \overrightarrow{BB'} \cdot \overrightarrow{CC'} \\
+	%
+	&= 0 + (\overrightarrow{AB'} + \overrightarrow{B'B}) \cdot
+	\overrightarrow{CC'} + \overrightarrow{BB'} \cdot
+	(\overrightarrow{AC'} + \overrightarrow{C'C})
+	+ \overrightarrow{BB'} \cdot \overrightarrow{CC'} \\
+	%
+	&= \overrightarrow{AB'} \cdot \overrightarrow{CC'}
+	+ \overrightarrow{B'B} \cdot \overrightarrow{CC'}
+	+ \overrightarrow{BB'} \cdot \overrightarrow{AC'}
+	+ \overrightarrow{BB'} \cdot \overrightarrow{C'C}
+	+ \overrightarrow{BB'} \cdot \overrightarrow{CC'} \\
+	%
+	&= - \overrightarrow{BB'} \cdot \overrightarrow{CC'}
+	- \overrightarrow{BB'} \cdot \overrightarrow{CC'}
+	+ \overrightarrow{BB'} \cdot \overrightarrow{CC'} \\
+	%
+	&= - \overrightarrow{BB'} \cdot \overrightarrow{CC'} \\
+	%
+	&= - |BB'| |CC'| \cos 0 < 0
+	\quad (\because BB' \parallel CC', 
+	\quad |BB'| > 0 \text{かつ} |CC'| > 0)
+	%
+\end{align*}
+したがって, 
+$\overrightarrow{AB'} \cdot \overrightarrow{AC'} < 0$が成り立つので, 
+$\angle B'AC' > \frac{\pi}{2}$が成立する.
+% (3)
+\subsection*{(3)}
+\end{document}
