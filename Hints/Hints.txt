@@ -1,0 +1,18 @@
+My Hints
+
+そもそものgitの使い方
+pullからpushまでの一連の流れ
+https://qiita.com/yukiyoshimura/items/7aa4a8f8db493ab97c2b
+
+区分求積法-不等式
+https://math.nakaken88.com/textbook/standard-definite-integral-and-inequality-sum/
+https://math.nakaken88.com/textbook/basic-definite-integral-and-inequality/
+
+TeXでのグラフ描画基礎
+https://hitgot.org/archives/drawing-in-tex-by-tikz-2/
+https://hitgot.org/archives/drawing-in-tex-by-tikz-3/
+https://note.kaigojob.com/okami_room/n/n3e45556f4496
+https://ja.overleaf.com/read/qcyxgbhztmkt
+
+TeXでグラフ描画の詳細なお話
+https://ja.overleaf.com/read/qcyxgbhztmkt
