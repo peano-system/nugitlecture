@@ -2,18 +2,34 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
+\usepackage{subfiles}
 \newcommand\R{\mathbb{R}}
 \newcommand\C{\mathbb{C}}
 \theoremstyle{definition}
 \newtheorem{thm}{Thm}[section]
+
+%問題環境を作った．
+\newtheorem{prob}{問題}
+
+%解答環境を作った．
+\newtheorem*{pf}{解答}
+
 \newtheorem{prop}[thm]{Prop}
 \newtheorem{lem}[thm]{Lem}
 \newtheorem{ex}[thm]{Example}
 \newtheorem{defi}[thm]{Def}
+
+%enumerate環境の番号を (1),(2),(3)...にする．
+\renewcommand{\labelenumi}{(\arabic{enumi})}
 \numberwithin{equation}{section}
-\usepakage{subfiles}
+
 
 \begin{document}
+\title{東北大学2019年度入試過去問数学理系}
+\author{OCHIAI Mio, DOI Jumpei}
+\date{}
+\maketitle
+\newpage
 
 \subfile{ochiai}
 \subfile{doi}
