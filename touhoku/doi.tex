@@ -35,10 +35,49 @@ $\{\}$ の中身は整式だから，
 \end{equation*}
 が成り立つ．
 
-(3)
+(3) 
+\begin{eqnarray*}
+(x\sin\theta+\cos\theta)^2 &=& \sin^2\theta(x^2+1)+
+										\cos^2\theta-\sin^2\theta+2x\sin\theta\cos\theta \\
+\end{eqnarray*}
+よって，
+\begin{equation*}
+[(x\sin\theta+\cos\theta)^2] = x\sin2\theta+\cos2\theta 
+\end{equation*}
+を得る．
 
-
-(4)
+(4) 
+\begin{eqnarray*}
+r := \sqrt{a^2+b^2} \\
+\cos\theta := \frac{b}{r} \\
+\sin\theta := \frac{a}{r}
+\end{eqnarray*}
+と定義する．このとき，
+\begin{equation*}
+ax+b= r(x\sin\theta+\cos\theta)
+\end{equation*}
+と書ける．すると，(3)より
+\begin{eqnarray*}
+[(ax+b)^4]&=&r^4[[(x\sin\theta+\cos\theta)^2][(x\sin\theta+\cos\theta)^2]] \\
+&=&r^4[(x\sin2\theta+\cos2\theta)^2] \\
+&=&r^4(x\sin4\theta+\cos4\theta)
+\end{eqnarray*}
+これが $-1$ に等しいので，
+\begin{itemize}
+\item $r^4 = 1$ \\
+\item $\sin4\theta = 0$ \\
+\item $\cos4\theta = -1$
+\end{itemize}
+となる．特に $r \in \R$ より，これは
+\begin{equation*}
+r = 1,\quad \theta = -\frac{\pi}{4}+\frac{n\pi}{2}, \quad (n \in \Z)
+\end{equation*}
+という条件と同値である．
+これを $(a,b)$ に直すと，
+\begin{equation*}
+(a,b)=(\pm \frac{1}{\sqrt{2}}, \pm \frac{1}{\sqrt{2}}) ,\quad (\text{複号任意})
+\end{equation*}
+を得る．
 \end{pf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{prob}
@@ -78,6 +117,35 @@ I_2 -I_1 &=& \int^1_{-1}\sin^2(\pi x) \frac{-1+e^x}{1+e^x}dx \\
 					\frac{e^\frac{x}{2}-e^{-\frac{x}{2}}}{e^\frac{x}{2}+e^{-\frac{x}{2}}}dx \\
 \end{eqnarray*}
 特に被積分関数は奇関数であるから，$I_2 = I_1$. これより，$I_1 =\frac{1}{2}$
+
+(2)
+\begin{equation*}
+a := \int^1_{-1}f(t)dt, \quad b := \int^1_{-1}e^tf(t)dt
+\end{equation*}
+とおく．すると，
+\begin{eqnarray*}
+(1+e^x)f(x) &=& \sin^2(\pi x)+\int^1_{-1}(e^x-e^t+1)f(t)dt \\
+&=&\sin^2(\pi x)+(e^x+1)a - b
+\end{eqnarray*}
+と書ける．
+すると，辺々積分することで
+\begin{eqnarray*}
+a + b = \int^1_{-1}(1+e^x)f(x)dx = \int^1_{-1}\sin^2(\pi x)dx 
+											+ a \int^1_{-1}(1+e^x)dx -2b \\
+= 1 + a(2 + e -e^{-1}) -2b
+\end{eqnarray*}
+同様に，
+\begin{eqnarray*}
+a = \int^1_{-1}f(x)dx = \int^1_{-1}\frac{\sin^2(\pi x)}{1+e^x}dx
+									+ 2a -b\int^1_{-1}\frac{1}{1+e^x}dx \\
+									= \frac{1}{2} + 2a - b
+\end{eqnarray*}
+を得る．これらの式を用いて，
+\begin{itemize}
+\item a = \frac{1}{2(e-e^{-1}-2)} \\
+\item b = \frac{1}{2(e-e^{-1}-2)} + \frac{1}{2}
+\end{itemize}
+が成り立つ．
 \end{pf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{prob}
