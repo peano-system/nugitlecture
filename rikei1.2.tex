@@ -1,0 +1,27 @@
+\documentclass[a4j, 12pt]{jarticle}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\begin{document}
+$ ( \tan \theta)' = \frac{1}{\cos^2 \theta} $ より、
+
+\begin{eqnarray}
+ ( \tan \theta ・ \frac{1}{\cos^{n-2} \theta}) 
+& = & \frac{1}{\cos^n \theta} +  \tan \theta ・  \frac{2-n}{\cos^{n-1} \theta} ・ ( - \sin \theta) \\
+& = & \frac{1}{\cos^n \theta} +  \frac{n-2}{\cos^{n} \theta} ・ \sin^2 \theta \\
+& = & \frac{1}{\cos^n \theta} +  \frac{n-2}{\cos^{n} \theta} ・ (1 -  \cos^2 \theta ) \\
+& = & \frac{1}{\cos^n \theta} +  \frac{n-2}{\cos^{n} \theta} + \frac{n-2}{\cos^{n-2} \theta} \\
+& = & \frac{n-1}{\cos^{n} \theta} + \frac{n-2}{\cos^{n-2} \theta} \\
+\end{eqnarray}
+
+この式の両辺を０から$\frac{\pi}{3}$ まで積分する。
+
+\begin{eqnarray}
+(右辺）　
+& = & \int_{0}^{\frac{\pi}{3}} \frac{n-1}{\cos^{n} \theta} + \frac{n-2}{\cos^{n-2} \theta} \\
+& = & 
+\end{eqnarray}
+
+
+\end{document}
