@@ -9,14 +9,14 @@
 
 \end{prob}
 \begin{pf}
-(1) $2x^2+x+3 =2(x^2+1)+x+1$ より，$[2x^2+x+3] = x+1$ である．
+$(1)$ $2x^2+x+3 =2(x^2+1)+x+1$ より，$[2x^2+x+3] = x+1$ である．
 
 次に，$x^5-1 = (x^3-x)(x^2+1)+x-1$ より，$[x^5-1] = x-1$ である．
 
 最後に，$[2x^2+x+3][x^5-1] = (x+1)(x-1) = x^2-1 = (x^2+1)-2$ より，
 $[[2x^2+x+3][x^5-1]] = -2$ である. 
 
-(2) [・] の定義より， 
+$(2)$ $[・]$ の定義より， 
 \begin{eqnarray*}
 A(x) = \exists P(x)(x^2+1)+[A(x)], \\
 B(x) = \exists Q(x)(x^2+1)+[B(x)]
@@ -35,7 +35,7 @@ $\{\}$ の中身は整式だから，
 \end{equation*}
 が成り立つ．
 
-(3) 
+$(3)$
 \begin{eqnarray*}
 (x\sin\theta+\cos\theta)^2 &=& \sin^2\theta(x^2+1)+
 										\cos^2\theta-\sin^2\theta+2x\sin\theta\cos\theta \\
@@ -46,7 +46,7 @@ $\{\}$ の中身は整式だから，
 \end{equation*}
 を得る．
 
-(4) 
+$(4)$ 
 \begin{eqnarray*}
 r := \sqrt{a^2+b^2} \\
 \cos\theta := \frac{b}{r} \\
@@ -56,7 +56,7 @@ r := \sqrt{a^2+b^2} \\
 \begin{equation*}
 ax+b= r(x\sin\theta+\cos\theta)
 \end{equation*}
-と書ける．すると，(3)より
+と書ける．すると，$(3)$ より
 \begin{eqnarray*}
 [(ax+b)^4]&=&r^4[[(x\sin\theta+\cos\theta)^2][(x\sin\theta+\cos\theta)^2]] \\
 &=&r^4[(x\sin2\theta+\cos2\theta)^2] \\
@@ -84,7 +84,7 @@ r = 1,\quad \theta = -\frac{\pi}{4}+\frac{n\pi}{2}, \quad (n \in \Z)
 
 \end{prob}
 \begin{pf}
-(1) 
+$(1) $
 \begin{eqnarray*}
 I &:= \int^1_0\sin^2(\pi x) dx, \\
 I_1 &:= \int^1_{-1}\frac{\sin^2(\pi x)}{1+e^x}dx, \\
@@ -118,7 +118,7 @@ I_2 -I_1 &=& \int^1_{-1}\sin^2(\pi x) \frac{-1+e^x}{1+e^x}dx \\
 \end{eqnarray*}
 特に被積分関数は奇関数であるから，$I_2 = I_1$. これより，$I_1 =\frac{1}{2}$
 
-(2)
+$(2)$
 \begin{equation*}
 a := \int^1_{-1}f(t)dt, \quad b := \int^1_{-1}e^tf(t)dt
 \end{equation*}
@@ -158,7 +158,7 @@ f(x) = \frac{\sin^2(\pi x)}{1+e^x} + \frac{1}{2(e-e^{-1}-2)}
 
 \end{prob}
 \begin{pf}
-(1) $n+1$ 回目の試行が終わったとき, 赤玉が $2$ 個である場合は,
+$(1)$ $n+1$ 回目の試行が終わったとき, 赤玉が $2$ 個である場合は,
 \begin{enumerate}
 \item $n$ 回目に赤玉が $2$ 個で, 白玉を引く.
 \item $n$ 回目に白玉が $1$ 個で, 赤玉を引く.
@@ -170,8 +170,8 @@ p(n+1, 2) = \frac{7}{10}p(n,2) + \frac{4}{10}p(n,1)
 \end{equation*}
 が成り立つ.
 
-(2）, (3) 
-(1) と同様に $p(n+1,1)$, $p(n+1,0)$ を $p(n,2)$, $p(n,1)$, $p(n,0)$ で表すと, 
+$(2）$, $(3)$ 
+$(1)$ と同様に $p(n+1,1)$, $p(n+1,0)$ を $p(n,2)$, $p(n,1)$, $p(n,0)$ で表すと, 
 次の表示を得る.
 \begin{equation*}
 \begin{pmatrix}
@@ -227,8 +227,20 @@ p(0,0)
 \begin{equation*}
 P = 
 \begin{pmatrix}
-1 & 
-\end{pmatrix} 
+1 & -4 & 10\\
+0 & 1 & -5\\
+0 & 0 & 1
+\end{pmatrix}
 \end{equation*}
+と置くと, $P^{-1}AP=\rm{diag}(7,6,5)$ が分かるので, 
+\begin{equation*}
+A^n = P \rm{daig}(7^n,6^n,5^n) P^{-1}
+\end{equation*}
+を計算して,
+\begin{eqnarray*}
+p(n,1) = \left(\frac{1}{10}\right)^n \left\{ 6^n5 -5^n5 \right\} \\
+p(n,2) = \left(\frac{1}{10}\right)^n \left\{ 3^n10 -6^n20 + 5^n10 \right\}
+\end{eqnarray*}
+を得る.
 \end{pf}
 \end{document}
