@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: 
+      - master
+      - release/*
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: setup environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y curl python3 latexmk lmodern texlive texlive-latex-extra texlive-lang-japanese
+    - name: build pdf
+      run: |
+        platex main.tex
+        dvipdfmx main.dvi
