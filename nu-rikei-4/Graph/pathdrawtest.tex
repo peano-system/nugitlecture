@@ -1,0 +1,17 @@
+\RequirePackage{luatex85}
+\documentclass[border={15pt,15pt,15pt,15pt}]{standalone}
+\usepackage{luatexja}
+\usepackage{tikz}
+\usetikzlibrary{intersections,math,patterns}
+\begin{document}
+ 
+\begin{tikzpicture}
+  %
+  % pathを作って名前をつける
+  %
+  \path[name path=log, domain=0.7:4.5] plot(\x,{ln(\x)});
+  
+\end{tikzpicture}
+
+ 
+\end{document}
