@@ -1,0 +1,50 @@
+\documentclass[main]{subfiles}
+%\usepackage{amsmath}
+%\usepackage[dvipdfmx]{graphicx}
+%\usepackage{tikz}
+%\usepackage[dvipdfmx]{graphicx}
+%\usepackage{tikz}
+%\usepackage{amsmath, amssymb}
+%\usepackage{type1cm}
+\begin{document}
+(2)
+\begin{align*}
+5.1^2=26.01\cdots
+\\6.1^2=37.2\cdots
+\\7.1^2=50.41\cdots
+\\8.1^2=65.6\cdots
+\\9.1^2=82.8\cdots
+\\10.1^2=102.01\cdots
+\\11.1^2=123.2\cdots
+\\12.1^2=146.4\cdots
+\end{align*}
+以上より条件を満たす$n$は小さい順に
+$$
+26,37,50,65,82,101,102,122,123,145,\cdots
+$$
+よって145 \\
+
+(別解法） \\
+$\sqrt{n}$ の整数部分を $m$ とおく.　\\
+問題の条件から $\sqrt{n}$ は整数ではないので
+\begin{align*}
+ m < \sqrt{n} < m + 1 \\
+ m^2 < n < (m+1)^2
+\end{align*}
+となるので, $n=m^2 + k$ のようになる. (ただし$k =1, 2, \cdots 2m$)
+また小数点以下に関する条件から
+\begin{align*}
+0.01 \le \sqrt{n} -m < 0.1 \\
+m + 0.01 \le \sqrt{n} < m + 0.1 \\
+(m + 0.01)^2 \le n (=m^2 + k) < m + 0.1 \\
+0.02m + 0.0001 \le k < 0.2m + 0.01
+\end{align*}
+ここで $0.02m + 0.0001 \ge 1$ とすると, $m \le 49.995$.
+(1)によって一番小さい$n$ は $26 = 5^2 +1$ であった. (つまり$m=5$.) \\
+一方で, $f(m) = 0.2m + 0.01 $ としておくと,
+$f(5）= 1.01 , f(6) = 1.21 f(7) = 1.41,  f(8) = 1.61,  f(9) = 1.81,  f(10) = 2.01, f(11) = 2.21, f(12) = 2.41$
+のようになる. つまり$m=5, 6, \cdots, 12$ のときの$k$ の個数は$1, 1, 1, 1, 1, 2, 2, 2$ のようになる.
+求めるものは, 小さいものから10番目であるので小さいものから数えてゆくと,
+$m=12$ で $k=1$ のときつまり$n=12^2 +1 = 145$. \\
+以上から145 が答えである.
+\end{document}
