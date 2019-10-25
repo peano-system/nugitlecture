@@ -22,5 +22,7 @@ jobs:
         platex main.tex
         dvipdfmx main.dvi
     - name: upload pdf
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         bash .github/workflows/entrypoint.sh
