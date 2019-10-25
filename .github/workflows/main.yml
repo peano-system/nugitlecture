@@ -17,3 +17,5 @@ jobs:
         uses: actions/checkout@v1
       - name: Build docker image
         uses: peano-system/nugitlecture/.github/actions/latex@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
