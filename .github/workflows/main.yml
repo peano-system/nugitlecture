@@ -11,6 +11,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      - name: check secret token
+        run: echo ${{ secrets.GITHUB_TOKEN }}
       - name: Set up Git repository
         uses: actions/checkout@v1
       - name: Build docker image
