@@ -142,16 +142,93 @@ a = \int^1_{-1}f(x)dx = \int^1_{-1}\frac{\sin^2(\pi x)}{1+e^x}dx
 \end{eqnarray*}
 を得る．これらの式を用いて，
 \begin{itemize}
-\item a = \frac{1}{2(e-e^{-1}-2)} \\
-\item b = \frac{1}{2(e-e^{-1}-2)} + \frac{1}{2}
+\item $a = \frac{1}{2(e-e^{-1}-2)}$ \\
+\item $b = \frac{1}{2(e-e^{-1}-2)} + \frac{1}{2}$
 \end{itemize}
 が成り立つ．
+これを元の式に代入して, 
+\begin{equation*}
+f(x) = \frac{\sin^2(\pi x)}{1+e^x} + \frac{1}{2(e-e^{-1}-2)} 
+	- \frac{1}{1+e^x} \left\{ \frac{1}{2(e-e^{-1}-2)} + \frac{1}{2} \right\}
+\end{equation*}
+を得る.
 \end{pf}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{prob}
 
 \end{prob}
 \begin{pf}
+(1) $n+1$ 回目の試行が終わったとき, 赤玉が $2$ 個である場合は,
+\begin{enumerate}
+\item $n$ 回目に赤玉が $2$ 個で, 白玉を引く.
+\item $n$ 回目に白玉が $1$ 個で, 赤玉を引く.
+\end{enumerate}
+の二つに分けられる. 
+白玉と赤玉の数の和は常に $10$ であることに注意すると, 
+\begin{equation*}
+p(n+1, 2) = \frac{7}{10}p(n,2) + \frac{4}{10}p(n,1)
+\end{equation*}
+が成り立つ.
 
+(2）, (3) 
+(1) と同様に $p(n+1,1)$, $p(n+1,0)$ を $p(n,2)$, $p(n,1)$, $p(n,0)$ で表すと, 
+次の表示を得る.
+\begin{equation*}
+\begin{pmatrix}
+p(n+1,2) \\
+p(n+1,1) \\
+p(n+1,0)
+\end{pmatrix} 
+= \frac{1}{10}
+\begin{pmatrix}
+7 & 4 & 0 \\
+0 & 6 & 5 \\
+0 & 0 & 5
+\end{pmatrix}
+\begin{pmatrix}
+p(n,2) \\
+p(n,1) \\
+p(n,0)
+\end{pmatrix}
+\end{equation*}
+ここで, 
+\begin{equation*}
+A =  \frac{1}{10}
+\begin{pmatrix}
+7 & 4 & 0 \\
+0 & 6 & 5 \\
+0 & 0 & 5
+\end{pmatrix}
+\end{equation*}
+と置くと, 
+\begin{equation*}
+\begin{pmatrix}
+p(n,2) \\
+p(n,1) \\
+p(n,0)
+\end{pmatrix} 
+= A^n
+\begin{pmatrix}
+p(0,2) \\
+p(0,1) \\
+p(0,0)
+\end{pmatrix} 
+= A^n
+\begin{pmatrix}
+0 \\
+0\\
+1
+\end{pmatrix} 
+\end{equation*}
+と書くことができる.
+
+あとは $A^n$ を求めればよい.
+いま, 
+\begin{equation*}
+P = 
+\begin{pmatrix}
+1 & 
+\end{pmatrix} 
+\end{equation*}
 \end{pf}
 \end{document}
