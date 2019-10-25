@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.6.25)  25 OCT 2019 14:14
+This is e-pTeX, Version 3.14159265-p3.8.2-190131-2.6 (utf8.sjis) (TeX Live 2019/W32TeX) (preloaded format=platex 2019.6.25)  25 OCT 2019 15:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -138,8 +138,7 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-No file rikei1.aux.
+)) (./rikei1.aux)
 \openout1 = `rikei1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -158,6 +157,7 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -212,12 +212,12 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
 
 ] (./rikei1.aux) ) 
 Here is how much of TeX's memory you used:
- 1790 strings out of 493230
- 21766 string characters out of 6147555
+ 1792 strings out of 493230
+ 21788 string characters out of 6147555
  94784 words of memory out of 5000000
  5793 multiletter control sequences out of 15000+600000
  16248 words of font info for 65 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  27i,6n,31p,221b,239s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on rikei1.dvi (1 page, 868 bytes).
+Output written on rikei1.dvi (1 page, 860 bytes).
