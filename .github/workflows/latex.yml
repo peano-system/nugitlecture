@@ -13,9 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - name: setup environment
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        apt update
+        apt install -y curl python3 latexmk lmodern texlive texlive-latex-extra texlive-lang-japanese
+    - name: build pdf
+      run: |
+        mkdir -p /app
+        platex main.tex
+        dvipdfmx main.dvi
