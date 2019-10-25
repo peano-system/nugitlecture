@@ -21,3 +21,6 @@ jobs:
       run: |
         platex main.tex
         dvipdfmx main.dvi
+    - name: upload pdf
+      run: |
+        bash .github/workflows/entrypoint.sh
