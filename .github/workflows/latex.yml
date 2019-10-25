@@ -19,6 +19,5 @@ jobs:
         sudo apt-get install -y curl python3 latexmk lmodern texlive texlive-latex-extra texlive-lang-japanese
     - name: build pdf
       run: |
-        mkdir -p /app
         platex main.tex
         dvipdfmx main.dvi
