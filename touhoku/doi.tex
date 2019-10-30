@@ -1,0 +1,246 @@
+\documentclass[main]{subfiles}
+
+\begin{document}
+%ここへいつも通り本文を打ち込めばよいようです．
+%マクロが使いたい場合は main のプリアンブルへ書き込んでください．
+%問題を書くか確認する，というか問題を書かなくていいか確認する．
+\setcounter{prob}{3}
+\begin{prob}
+
+\end{prob}
+\begin{pf}
+$(1)$ $2x^2+x+3 =2(x^2+1)+x+1$ より，$[2x^2+x+3] = x+1$ である．
+
+次に，$x^5-1 = (x^3-x)(x^2+1)+x-1$ より，$[x^5-1] = x-1$ である．
+
+最後に，$[2x^2+x+3][x^5-1] = (x+1)(x-1) = x^2-1 = (x^2+1)-2$ より，
+$[[2x^2+x+3][x^5-1]] = -2$ である. 
+
+$(2)$ $[・]$ の定義より， 
+\begin{eqnarray*}
+A(x) = \exists P(x)(x^2+1)+[A(x)], \\
+B(x) = \exists Q(x)(x^2+1)+[B(x)]
+\end{eqnarray*}
+と書ける．ただし，$P(x)$, $Q(x)$ は整式である．
+
+このとき次が成り立つ．
+\begin{eqnarray*}
+A(x)B(x) &=& \{P(x)(x^2+1)+[A(x)]\}\{Q(x)(x^2+1)+[B(x)]\} \\
+				&=& \{P(x)Q(x)(x^2+1)+(P(x)[B(x)]+Q(x)[A(x)])\}(x^2+1) \\ 
+				                                                        &+& \quad [A(x)][B(x)]
+\end{eqnarray*}
+$\{\}$ の中身は整式だから，
+\begin{equation*}
+[A(x)][B(x)] = [[A(x)][B(x)]]
+\end{equation*}
+が成り立つ．
+
+$(3)$
+\begin{eqnarray*}
+(x\sin\theta+\cos\theta)^2 &=& \sin^2\theta(x^2+1)+
+										\cos^2\theta-\sin^2\theta+2x\sin\theta\cos\theta \\
+\end{eqnarray*}
+よって，
+\begin{equation*}
+[(x\sin\theta+\cos\theta)^2] = x\sin2\theta+\cos2\theta 
+\end{equation*}
+を得る．
+
+$(4)$ 
+\begin{eqnarray*}
+r := \sqrt{a^2+b^2} \\
+\cos\theta := \frac{b}{r} \\
+\sin\theta := \frac{a}{r}
+\end{eqnarray*}
+と定義する．このとき，
+\begin{equation*}
+ax+b= r(x\sin\theta+\cos\theta)
+\end{equation*}
+と書ける．すると，$(3)$ より
+\begin{eqnarray*}
+[(ax+b)^4]&=&r^4[[(x\sin\theta+\cos\theta)^2][(x\sin\theta+\cos\theta)^2]] \\
+&=&r^4[(x\sin2\theta+\cos2\theta)^2] \\
+&=&r^4(x\sin4\theta+\cos4\theta)
+\end{eqnarray*}
+これが $-1$ に等しいので，
+\begin{itemize}
+\item $r^4 = 1$ \\
+\item $\sin4\theta = 0$ \\
+\item $\cos4\theta = -1$
+\end{itemize}
+となる．特に $r \in \R$ より，これは
+\begin{equation*}
+r = 1,\quad \theta = -\frac{\pi}{4}+\frac{n\pi}{2}, \quad (n \in \Z)
+\end{equation*}
+という条件と同値である．
+これを $(a,b)$ に直すと，
+\begin{equation*}
+(a,b)=(\pm \frac{1}{\sqrt{2}}, \pm \frac{1}{\sqrt{2}}) ,\quad (\text{複号任意})
+\end{equation*}
+を得る．
+\end{pf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{prob}
+
+\end{prob}
+\begin{pf}
+$(1) $
+\begin{eqnarray*}
+I &:= \int^1_0\sin^2(\pi x) dx, \\
+I_1 &:= \int^1_{-1}\frac{\sin^2(\pi x)}{1+e^x}dx, \\
+I_2 &:= \int^1_{-1}\frac{e^x\sin^2(\pi x)}{1+e^x}dx
+\end{eqnarray*}
+とおく．
+
+まず，$I = \frac{1}{2}$ を示す．
+\begin{eqnarray*}
+\sin^2(\pi x) &=& \frac{1-\cos(2\pi x)}{2}
+\end{eqnarray*}
+より，
+\begin{eqnarray*}
+I &=& \frac{1}{2}\int^1_0 1-\cos(2\pi x)dx \\
+	&=& \frac{1}{2}[x-\frac{1}{2\pi}\sin(2\pi x)]^1_0 \\
+	&=& \frac{1}{2}
+\end{eqnarray*}
+と積分できる．
+
+次に，$I_1 = \frac{1}{2}$ を示そう．
+\begin{eqnarray*}
+I_1 + I_2 &=& \int^1_{-1}\sin^2(\pi x) \frac{1+e^x}{1+e^x}dx \\
+			&=& 2\int^1_0\sin^2(\pi x)dx \\
+			&=& 2I = 1
+\end{eqnarray*}
+次に, 
+\begin{eqnarray*}
+I_2 -I_1 &=& \int^1_{-1}\sin^2(\pi x) \frac{-1+e^x}{1+e^x}dx \\
+&=& \int^1_{-1}\sin^2(\pi x) 
+					\frac{e^\frac{x}{2}-e^{-\frac{x}{2}}}{e^\frac{x}{2}+e^{-\frac{x}{2}}}dx \\
+\end{eqnarray*}
+特に被積分関数は奇関数であるから，$I_2 = I_1$. これより，$I_1 =\frac{1}{2}$
+
+$(2)$
+\begin{equation*}
+a := \int^1_{-1}f(t)dt, \quad b := \int^1_{-1}e^tf(t)dt
+\end{equation*}
+とおく．すると，
+\begin{eqnarray*}
+(1+e^x)f(x) &=& \sin^2(\pi x)+\int^1_{-1}(e^x-e^t+1)f(t)dt \\
+&=&\sin^2(\pi x)+(e^x+1)a - b
+\end{eqnarray*}
+と書ける．
+すると，辺々積分することで
+\begin{eqnarray*}
+a + b = \int^1_{-1}(1+e^x)f(x)dx = \int^1_{-1}\sin^2(\pi x)dx 
+											+ a \int^1_{-1}(1+e^x)dx -2b \\
+= 1 + a(2 + e -e^{-1}) -2b
+\end{eqnarray*}
+同様に，
+\begin{eqnarray*}
+a = \int^1_{-1}f(x)dx = \int^1_{-1}\frac{\sin^2(\pi x)}{1+e^x}dx
+									+ 2a -b\int^1_{-1}\frac{1}{1+e^x}dx \\
+									= \frac{1}{2} + 2a - b
+\end{eqnarray*}
+を得る．これらの式を用いて，
+\begin{itemize}
+\item $a = \frac{1}{2(e-e^{-1}-2)}$ \\
+\item $b = \frac{1}{2(e-e^{-1}-2)} + \frac{1}{2}$
+\end{itemize}
+が成り立つ．
+これを元の式に代入して, 
+\begin{equation*}
+f(x) = \frac{\sin^2(\pi x)}{1+e^x} + \frac{1}{2(e-e^{-1}-2)} 
+	- \frac{1}{1+e^x} \left\{ \frac{1}{2(e-e^{-1}-2)} + \frac{1}{2} \right\}
+\end{equation*}
+を得る.
+\end{pf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{prob}
+
+\end{prob}
+\begin{pf}
+$(1)$ $n+1$ 回目の試行が終わったとき, 赤玉が $2$ 個である場合は,
+\begin{enumerate}
+\item $n$ 回目に赤玉が $2$ 個で, 白玉を引く.
+\item $n$ 回目に白玉が $1$ 個で, 赤玉を引く.
+\end{enumerate}
+の二つに分けられる. 
+白玉と赤玉の数の和は常に $10$ であることに注意すると, 
+\begin{equation*}
+p(n+1, 2) = \frac{7}{10}p(n,2) + \frac{4}{10}p(n,1)
+\end{equation*}
+が成り立つ.
+
+$(2）$, $(3)$ 
+$(1)$ と同様に $p(n+1,1)$, $p(n+1,0)$ を $p(n,2)$, $p(n,1)$, $p(n,0)$ で表すと, 
+次の表示を得る.
+\begin{equation*}
+\begin{pmatrix}
+p(n+1,2) \\
+p(n+1,1) \\
+p(n+1,0)
+\end{pmatrix} 
+= \frac{1}{10}
+\begin{pmatrix}
+7 & 4 & 0 \\
+0 & 6 & 5 \\
+0 & 0 & 5
+\end{pmatrix}
+\begin{pmatrix}
+p(n,2) \\
+p(n,1) \\
+p(n,0)
+\end{pmatrix}
+\end{equation*}
+ここで, 
+\begin{equation*}
+A =  \frac{1}{10}
+\begin{pmatrix}
+7 & 4 & 0 \\
+0 & 6 & 5 \\
+0 & 0 & 5
+\end{pmatrix}
+\end{equation*}
+と置くと, 
+\begin{equation*}
+\begin{pmatrix}
+p(n,2) \\
+p(n,1) \\
+p(n,0)
+\end{pmatrix} 
+= A^n
+\begin{pmatrix}
+p(0,2) \\
+p(0,1) \\
+p(0,0)
+\end{pmatrix} 
+= A^n
+\begin{pmatrix}
+0 \\
+0\\
+1
+\end{pmatrix} 
+\end{equation*}
+と書くことができる.
+
+あとは $A^n$ を求めればよい.
+いま, 
+\begin{equation*}
+P = 
+\begin{pmatrix}
+1 & -4 & 10\\
+0 & 1 & -5\\
+0 & 0 & 1
+\end{pmatrix}
+\end{equation*}
+と置くと, $P^{-1}AP=\rm{diag}(7,6,5)$ が分かるので, 
+\begin{equation*}
+A^n = P \rm{daig}(7^n,6^n,5^n) P^{-1}
+\end{equation*}
+を計算して,
+\begin{eqnarray*}
+p(n,1) = \left(\frac{1}{10}\right)^n \left\{ 6^n5 -5^n5 \right\} \\
+p(n,2) = \left(\frac{1}{10}\right)^n \left\{ 3^n10 -6^n20 + 5^n10 \right\}
+\end{eqnarray*}
+を得る.
+\end{pf}
+\end{document}
