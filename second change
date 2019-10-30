@@ -1,0 +1,297 @@
+[33mcommit 40e4f7ada4476cee0eff9d9cc30dbe871440b6af[m[33m ([m[1;36mHEAD -> [m[1;32mnurikei3[m[33m)[m
+Merge: fbc356f 3dc92e6
+Author: TANIGUCHI Kazu <qn6219744@nu-media.local>
+Date:   Fri Oct 11 16:07:50 2019 +0900
+
+    createtexandtxt
+
+[33mcommit 3dc92e66b6dc878ff1a63e24a4ff34bd8613a2d3[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: doi-jumpei <m19029k@math.nagoya-u.ac.jp>
+Date:   Fri Oct 11 16:02:24 2019 +0900
+
+    second change
+
+[33mcommit b29cb22b1f788cef0c84a006dc4cc064c5c952d4[m
+Author: MIYASHITA Jin <th2681469@nu-media.local>
+Date:   Fri Oct 11 15:52:22 2019 +0900
+
+    文系解答編集用
+
+[33mcommit aedc1e2a5f008a62dd2e49e85e263d1f0020b1f2[m
+Author: Ngyk <[tl.cast.er53@gmail.com]>
+Date:   Fri Oct 11 15:14:58 2019 +0900
+
+    add new folder
+
+[33mcommit a86845d9cb9f040756991be6d69ab5365a3f94a9[m
+Author: Ngyk <[tl.cast.er53@gmail.com]>
+Date:   Fri Oct 11 14:56:03 2019 +0900
+
+    add new file
+
+[33mcommit 136080691814d262570ad8c5ad5498985e64f16c[m
+Author: Ngyk <[tl.cast.er53@gmail.com]>
+Date:   Fri Oct 11 14:52:01 2019 +0900
+
+    add new folder
+
+[33mcommit 571a0138883840fb9f892e726e61fdd6eff95ddf[m
+Author: HAMANISHI Kyohei <dn4029147@nu-media.local>
+Date:   Fri Oct 11 15:35:06 2019 +0900
+
+    test
+
+[33mcommit 54fcca656e1f9b596d330ffb29427dc49a57670b[m
+Author: NAGATA Shoji <gc3567533@nu-media.local>
+Date:   Fri Oct 11 14:52:57 2019 +0900
+
+    aaaaa
+
+[33mcommit a18aba2e5764e765c7a83510370f048436240a93[m
+Author: NAGATA Shoji <gc3567533@nu-media.local>
+Date:   Fri Oct 11 14:45:16 2019 +0900
+
+    aaaaa
+
+[33mcommit b36fa3154a4d62bb9bf89746570a1500c5722925[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 15:09:55 2019 +0900
+
+    del S30.tex
+
+[33mcommit 7c0cbbd03fb312d6181072dc49bdea59c576db54[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:29:25 2019 +0900
+
+    Delete あ
+
+[33mcommit d2aba60a5704b2cdf16d22f365d3d41c82ee5fd8[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:26:20 2019 +0900
+
+    Create あ
+
+[33mcommit 83eea40c3f722791082333fe9c21718b76352290[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:29:25 2019 +0900
+
+    Delete あ
+
+[33mcommit 1e292ac60ee023174f407a0cc56e827bc92a1e30[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:26:20 2019 +0900
+
+    Create あ
+
+[33mcommit b17fa79c365c85db68e779a88b8bdd704377a395[m
+Author: takizukakotaro <finkusu1013@gmail.com>
+Date:   Fri Oct 11 15:24:35 2019 +0900
+
+    test
+
+[33mcommit cb3c538d143d5401bfaa357e01554609b497257a[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 14:21:27 2019 +0900
+
+    add nagoya_u folder
+
+[33mcommit ae5751ffbabd32e1e68ff1bc5e195d02cfb12b6d[m
+Author: doi-jumpei <m19029k@math.nagoya-u.ac.jp>
+Date:   Fri Oct 11 15:38:05 2019 +0900
+
+    hogehoge
+
+[33mcommit 97613344978aa75c50b99d3f8c3af3e2cedfb7e5[m
+Author: YusukeYokoyama <56147033+YusukeYokoyama@users.noreply.github.com>
+Date:   Fri Oct 11 15:33:13 2019 +0900
+
+    Create yokoyama
+
+[33mcommit 7b955f2ec37d494fe96eb663666f3e8e745c1c9b[m
+Author: kenken37 <56146771+kenken37@users.noreply.github.com>
+Date:   Fri Oct 11 15:31:29 2019 +0900
+
+    Add files via upload
+
+[33mcommit 4a3990e961af794e3003fdd0b21772183f4c8bfa[m
+Author: ShimizuTakashi <m19020b@math.nagoya-u.ac.jp>
+Date:   Fri Oct 11 15:12:00 2019 +0900
+
+    test
+
+[33mcommit 34bf0e7ea39407717773b85b400679d01b4154fe[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 15:09:55 2019 +0900
+
+    del S30.tex
+
+[33mcommit 83aaddad8262c0cb7422ff2ecd46cfb06a97d448[m
+Author: MatsuyamaSota <matsuyama.sota@k.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 15:21:59 2019 +0900
+
+    I've just commited in GitHub.
+
+[33mcommit 15d5f44f46b56d1d1b1f5a8bf574bac2d317583b[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:29:25 2019 +0900
+
+    Delete あ
+
+[33mcommit 7033a7abd4e6d446beafdada1387ff82b5197896[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:26:20 2019 +0900
+
+    Create あ
+
+[33mcommit 02404d399ec32db9c81ca04f119377d677927e99[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:29:25 2019 +0900
+
+    Delete あ
+
+[33mcommit 4c0a4bcddb81c7afe8affd0d85abdcc832cca114[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:26:20 2019 +0900
+
+    Create あ
+
+[33mcommit 1ef2d81dfe77c96d174154f1f38175d58bda247a[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 14:21:27 2019 +0900
+
+    add nagoya_u folder
+
+[33mcommit 7e223accaffda310dfc44e94c326861ca7a027d9[m
+Author: YutaM0617 <matsui.yuta@k.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 15:21:00 2019 +0900
+
+    test
+
+[33mcommit d2178f211450598324f5d3b0f3fba1596529d00d[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 15:09:55 2019 +0900
+
+    del S30.tex
+
+[33mcommit 968df972096b7fe88189ccd68f7b0395464e715b[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:29:25 2019 +0900
+
+    Delete あ
+
+[33mcommit bf3e4d3a3f23c6d0a2bd92238d3c086fae74c566[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:26:20 2019 +0900
+
+    Create あ
+
+[33mcommit 306563c5f42b162eda05205930cc3b12a42a8ec4[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 14:21:27 2019 +0900
+
+    add nagoya_u folder
+
+[33mcommit 3e08eb9b62ddc05924374717d2ec5e264e3fae8f[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 15:09:55 2019 +0900
+
+    del S30.tex
+
+[33mcommit 2f85a3f3847ca7e56653f1bc65c26d26a695d692[m
+Author: HATANO Kanae <qd9601364@nu-media.local>
+Date:   Fri Oct 11 15:02:06 2019 +0900
+
+    test
+
+[33mcommit 9dc1245e2607f2ba4d8bc059816b4c86f90a6b62[m
+Author: NAGASAKU Koki <pm6599110@nu-media.local>
+Date:   Fri Oct 11 15:02:11 2019 +0900
+
+    test
+
+[33mcommit d6acfae871da7ab76b7f6133fb38b44a3aef1da4[m
+Author: MIYASHITA Jin <th2681469@nu-media.local>
+Date:   Fri Oct 11 14:56:23 2019 +0900
+
+    test
+
+[33mcommit fbb3fe2768da772e8044d5a5fb3ce5941ebb4370[m
+Author: FulminicAcid <longtimeago27@gmail.com>
+Date:   Fri Oct 11 14:32:14 2019 +0900
+
+    Test_Project
+    
+    新規作成
+
+[33mcommit 3ab797f1489ddddeaa9cf29589a3ece331b7272d[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:29:25 2019 +0900
+
+    Delete あ
+
+[33mcommit 4aa4676cee2bd9f2610219dbefaf1b10416a5ecc[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:26:20 2019 +0900
+
+    Create あ
+
+[33mcommit 84360aa085b0bec56bb83d4919a0588dddbe3d62[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:29:25 2019 +0900
+
+    Delete あ
+
+[33mcommit faa10569f5644af5ec8e0088fd5153b7afae5ac5[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:26:20 2019 +0900
+
+    Create あ
+
+[33mcommit 74ac6f4d007ccac0003997b02995ecbce3b6d41e[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 14:21:27 2019 +0900
+
+    add nagoya_u folder
+
+[33mcommit fbc356f333f6b4df22c1d82461d2fbd67c65c1c4[m[33m ([m[1;31morigin/nurikei3[m[33m, [m[1;32mdevelop[m[33m)[m
+Merge: d0b4288 e65aff2
+Author: doi-jumpei <m19029k@math.nagoya-u.ac.jp>
+Date:   Fri Oct 11 14:32:07 2019 +0900
+
+    Merge branch 'master' of https://github.com/peano-system/nugitlecture
+
+[33mcommit d0b42889afc8bb147e928f1b1817264e1db29249[m
+Author: doi-jumpei <m19029k@math.nagoya-u.ac.jp>
+Date:   Fri Oct 11 14:31:28 2019 +0900
+
+    remove ID
+
+[33mcommit e65aff2fd6905ca931ba15855fa41d82909016e5[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:29:25 2019 +0900
+
+    Delete あ
+
+[33mcommit 300768bbe9c90d36e0bfabdc8e0d208d53570eb1[m
+Author: sujkdkm <56146899+sujkdkm@users.noreply.github.com>
+Date:   Fri Oct 11 14:26:20 2019 +0900
+
+    Create あ
+
+[33mcommit f49232f31fea0d8be77263a4762a9a9c61f5cf90[m
+Author: irt-f <furukawa.tomoya@g.mbox.nagoya-u.ac.jp>
+Date:   Fri Oct 11 14:21:27 2019 +0900
+
+    add nagoya_u folder
+
+[33mcommit be5574e63fed0776d1b9f079cbbb14380925f33e[m
+Author: doi-jumpei <m19029k@math.nagoya-u.ac.jp>
+Date:   Fri Oct 11 14:16:48 2019 +0900
+
+    icebrake
+
+[33mcommit 33b66323f5381d376d936ead766ffae5ef327644[m[33m ([m[1;32mmaster[m[33m)[m
+Author: tannakaken <tannakaken@gmail.com>
+Date:   Thu Oct 3 14:44:36 2019 +0900
+
+    Initial commit
