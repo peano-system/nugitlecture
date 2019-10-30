@@ -1,17 +1,31 @@
-\documentclass{jsarticle}
+\documentclass[11pt]{jarticle}
 
-\usepackage{subfiles}
-\usepackage{amsmath,amssymb}
+\usepackage[a4paper,hmargin=20mm,vmargin=15pt]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
 
-\title{名古屋大学2019年度秋季社会数理概論II/応用数理II成果物}
-\author{}
-\date{}
-
+%%%%%%%%%%%
 \begin{document}
-
-\maketitle
-
-\subfile{introduction}
-
+正の整数$n$の正の平方根$\sqrt{n}$の整数部分を$a$とおくと, $a \ge 1$である. このとき$\sqrt{n}$が整数でなく, 十進数における小数点第1位が0となり, かつ第2位が0でないための必要十分条件は
+\begin{equation*}
+ a+0.01 \le \sqrt{n} < a+0.1
+\end{equation*}
+となる. 各辺を2乗して$a^2$を引くと, $a \ge 1$から$0.02a+0.0001>0$となるため, 
+\begin{equation}
+ 0 < 0.02a+0.0001 \le n-a^{2} < 0.2a+0.01
+\label{eq:1}
+\end{equation}
+これを満たす$a$が存在する$n$の中で最小のものが求める$n$である. 
+$n-a^{2}$は正整数であるため, $a$は$0.2a+0.01>1$を満たす必要がある. 
+$0.2a+0.01$が単調増加であり, $0.2 \times 4+0.01=0.81<1$, $0.2 \times 5+0.01=1.01>1$から$a \ge 5$となることが必要である. 
+また$n-a^2 \ge 1$より$n \ge a^2 +1$となり, $a \ge 5$から$n=26$が条件を満たす最小のものとなる. 
+実際, 不等式(\ref{eq:1})に$a=5$, $n=26$を代入すると
+\begin{equation*}
+ 0 < 0.1001 \le 1 < 1.01
+\end{equation*}
+となり条件を満たしていることが確認できる. 
+\begin{flushright}
+ 答え$n=26$
+\end{flushright}
 \end{document}
-
