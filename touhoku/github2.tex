@@ -1,0 +1,162 @@
+\documentclass[main]{subfiles}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{amsthm}
+%\newtheorem{problem}{問題}
+%\newtheorem{answer}{解答}
+%\renewcommand{\labelenumi}{(\arabic{enumi})}
+%\numberwithin{equation}{answer}
+
+ 
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{answer}
+$x=s, \, t$での接線を考えると
+    \begin{align}
+    &y=(\cos s)x+\sin s - s \cos s\notag\\
+    &y=(\cos t)x+\sin t - t \cos t \label{1.1}%%%%%%%%%label1.1%%%%%%%%%%%%%
+\end{align}
+$2$つの接線が直交するので$\cos s \cdot \cos t = -1.$ \\
+$-1 \le \cos s, \cos t \le 1$であり,$\, \cos s \ge \cos t$としても一般性を失わないので
+\begin{align*}
+\, \cos s= 1 &, \, \cos t =-1\\
+\therefore s=2n\pi &, \,  t=(2k+1)\pi. \quad (n, k \in \mathbb{Z} )
+\end{align*}
+これと$(\ref{1.1})$より,
+\begin{align*}
+y = x-2n\pi = -x+(2k+1)\pi \\
+\therefore x=\left( n+k+\frac{1}{2} \right)\pi , \quad x=\left( -n+k+\frac{1}{2} \right)\pi
+\end{align*}
+
+\end{answer}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{answer}
+まず$\log$の定義より
+\begin{align}
+x-n>0 \text{かつ}2n-x>0 \Longleftrightarrow n<x<2n \label{2.1} %%%%%%%label2.1%%%%%%
+\end{align}
+この範囲で
+\begin{align}
+&\log_{a}(x-n) > \frac{1}{2} \log_{a} (2n-x) \notag \\
+\Longleftrightarrow
+&\log_{a}(x-n)^{2} > \log_{a} (2n-x) \notag \\
+\Longleftrightarrow
+&\begin{cases}
+a>1 \\
+(x-n)^{2} > 2n-x
+\end{cases}
+\text{or} \,\,
+\begin{cases}
+0 <a <1 \\
+(x-n)^{2} < 2n-x
+\end{cases} \notag \\
+\Longleftrightarrow
+&\begin{cases}
+a>1 \\
+x^{2} - (2n-1) x + n^{2} -2n >0
+\end{cases}
+\text{or} \,\,
+\begin{cases}
+0 <a <1 \\
+x^{2} - (2n-1) x + n^{2} -2n <0
+\end{cases} \label{2.2} %%%%%%%%%%%%label{2.2}
+\end{align}
+
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$(1) $
+$a>1$のとき$(\ref{2.1})$と$(\ref{2.2})$に$n=6$を代入し
+\begin{align*}
+6< x <12 \, \text{かつ} \, x^{2} -11x +24>0 \Longleftrightarrow 8 < x <12
+\end{align*}
+$0<a<1$のとき同様に
+\begin{align*}
+6< x <12 \, \text{かつ} \, x^{2} -11x +24<0 \Longleftrightarrow 6 < x < 8
+\end{align*}
+以上より求める整数$x$は
+\begin{align*}
+a>1 \text{のとき} x=9, 10, 11 \quad 0<a<1 \text{のとき} x=7
+\end{align*}
+
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$(2) $
+$f(x)=x^{2} - (2n-1) x + n^{2} -2n$とおく.すると$f(x)$は
+\begin{align*}
+f(n)= -n <0 , \quad f(2n)=n^{2} >0
+\end{align*}
+なる下に凸な二次関数である.\\
+$n<x<2n$で$(\ref{2.2})$を満たす$x$が存在する必要十分条件を考える.\\
+$(a) \, a>1$のとき \\
+求める条件は$f(2n-1)>0$となるときなので,
+\begin{align*}
+f(2n-1)=n(n-2) >0 \Longleftrightarrow n>2
+\end{align*}
+
+$(b) \, 0<a<1$のとき \\
+求める条件は$f(n+1)<0$となるときなので,
+\begin{align*}
+f(n+1)=-n+2 < 0 \Longleftrightarrow n>2
+\end{align*}
+$(a), \, (b)$よりいずれの場合でも求める必要十分条件は$n>2$.
+\end{answer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{answer}
+$(1)$
+$x_{n+1} - x_{n} = x_{n}^{2} \ge 0$より,数列$\{ x_{n} \}$は単調増加する.よって
+\begin{align*}
+&x_{n+1} - x_{n} = x_{n}^{2} \ge x_{1}^{2} = a^{2} \,\, (\because a>0)\\
+&\therefore \, x_{n+1} \ge x_{n} +a^{2}
+\end{align*}
+これを繰り返し用いると
+\begin{align*}
+x_{n} \ge x_{1} +a^{2} (n-1) = a +a^{2} (n-1) \to \infty \quad (n \to \infty)
+\end{align*}
+以上より数列$\{ x_{n} \}$は発散する.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$(2)$数学的帰納法により示す.\\
+$(a)n=1$のとき\\
+$-1<a<0$つまり$-1<x_{1}<0$より満たす.\\
+$(b) -1<x_{k} <0$と仮定する.\\
+$\displaystyle x_{k+1} = x_{k} + x_{k}^{2} =\left(x_{k}+\frac{1}{2} \right)^{2} -\frac{1}{4}$より,
+仮定の範囲では$-\displaystyle\frac{1}{4} \le x_{k+1} < 1.$\\
+よって$-1<x_{k+1}<1$を満たす.\\
+$(a) \,(b)$より示された. \\
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$(3)$
+$-1<a<0$のとき$(2)$より$x_{n+1}, \, x_{n}, \, x_{n}+1 \neq 0$なので,漸化式の逆数をとると
+\begin{align*}
+\frac{1}{x_{n+1}} = \frac{1}{x_{n}+x_{n}^{2}}
+= \frac{1}{x_{n}} - \frac{1}{x_{n}+1}
+< \frac{1}{x_{n}} -1 \,\,\, \left(\because (2)-1<x_{n}<1\right)
+\end{align*}
+これを繰り返し用いると
+\begin{align*}
+\frac{1}{x_{n}} < \frac{1}{x_{1}} + (-1) \cdot (n-1) = \frac{1}{a} -(n-1) \to -\infty \quad (n \to \infty)
+\end{align*}
+以上より$\displaystyle\lim_{n \to \infty}\frac{1}{x_{n}} = - \infty$なので,
+$\displaystyle\lim_{n \to \infty} x_{n} =0$.
+\end{answer}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\end{document}

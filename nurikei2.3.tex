@@ -1,0 +1,30 @@
+\documentclass[./main]{subfiles}
+
+
+\begin{document}
+(3)
+ (2)より角$\angle B^\prime A C^\prime$は鈍角であるから、三角形$A B^\prime C^\prime$の最大の辺は$B^\prime C^\prime$であり、$B^\prime C^\prime = 7$が成り立つ。余弦定理から$\overrightarrow{B^\prime C^\prime}^2=\overrightarrow{AB^\prime}^2+\overrightarrow{AC^\prime}^2-2\overrightarrow{AB^\prime}\cdot\overrightarrow{AC^\prime}$であるから、$\overrightarrow{AB^\prime}\cdot\overrightarrow{AC^\prime}=-6$である。ゆえに(1)より$\overrightarrow{B^\prime B}\cdot\overrightarrow{C^\prime C}=-\overrightarrow{AB^\prime}\cdot\overrightarrow{AC^\prime}=6$が成り立ち、
+ \renewcommand{\arraystretch}{1.2}
+\[
+\begin{array}{rl}
+6&=\overrightarrow{B^\prime B}\cdot\overrightarrow{C^\prime C}\\
+ &=BB^\prime \,CC^\prime\cos 0\\
+ &=B B^\prime \,C C^\prime \quad\cdots \raise0.2ex\hbox{\textcircled{\scriptsize{1}}}
+\end{array}
+\]
+である。また、直角三角形$ABB^\prime,\, ACC^\prime$に三平方の定理を用いるとそれぞれ\[
+AB^2=BB^{\prime 2}+AB^{\prime 2},\qquad AC^2=CC^{\prime 2}+AC^{\prime 2}\]
+となるが、$AB=AC$であるから$BB^{\prime 2}+AB^{\prime 2}=CC^{\prime 2}+AC^{\prime 2}$である。$AB^{\prime}=4, AC^{\prime}=\sqrt{21}$と仮定すれば\[
+BB^{\prime 2}=CC^{\prime 2}+5\quad\cdots \raise0.2ex\hbox{\textcircled{\scriptsize{2}}}\]を得る。
+$\raise0.2ex\hbox{\textcircled{\scriptsize{2}}}$に$\raise0.2ex\hbox{\textcircled{\scriptsize{1}}}$を代入すると
+\renewcommand{\arraystretch}{1.7}
+\[
+\begin{array}{c}
+BB^{\prime 2}=\displaystyle\left(\frac{6}{BB^{\prime}}\right)^{\!\!2}+5\\
+BB^{\prime 4}-5BB^{\prime 2}-36=0\\
+(BB^{\prime 2}-9)(BB^{\prime 2}+4)=0\\
+BB^{\prime 2}=-4, 9
+\end{array}
+\]$BB^{\prime}$は正の実数だから、$BB^{\prime}=3$である。ゆえに$AB=\sqrt{BB^{\prime 2}+AB^{\prime 2}}=\sqrt{9+16}=5$である。
+\renewcommand{\arraystretch}{1.0}
+\end{document}
