@@ -1,11 +1,25 @@
-\documentclass{jsarticle}
+\documentclass{jarticle}
 
+\usepackage[a4paper,hmargin=20mm,vmargin=15pt]{geometry}
 \usepackage{subfiles}
-\usepackage{amsmath,amssymb}
+\usepackage{amsmath,amssymb,amsthm}
+\newcommand\Z{\mathbb{Z}}
+\newcommand\R{\mathbb{R}}
+\newtheorem{prob}{問題}
+\newtheorem{problem}{問題}
+\newtheorem*{pf}{解答}
+\newtheorem{answer}{解答}
+\numberwithin{equation}{answer}
+\renewcommand{\labelenumi}{(\arabic{enumi})}
 
 \title{名古屋大学2019年度秋季社会数理概論II/応用数理II成果物}
 \author{}
 \date{}
+\usepackage[a4paper,hmargin=20mm,vmargin=15pt]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+
 
 \begin{document}
 
@@ -13,5 +27,16 @@
 
 \subfile{introduction}
 
+\subfile{touhoku/github2}
+\subfile{touhoku/doi}
+
+%名大理系
+\subfile{nurikei1.2}
+\subfile{yk/kakomon}
+%名大文系
+\subfile{bunnkei1}
+\subfile{bunkei-2-3}
+\subfile{mhamada/mhamada}
+\subfile{subfile}
 \end{document}
 
