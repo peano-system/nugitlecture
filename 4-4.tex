@@ -1,0 +1,47 @@
+\documentclass[../main]{subfiles}
+%
+\begin{document}
+ \setcounter{prob}{3}
+ \prob
+ $(4)$
+ \begin{pf}
+  \begin{enumerate}
+   \item 長さ $n$ のサイクルを持つとき
+   $n$ におけるサイクルの総数は $n!$ 個であり,
+   長さ$n$ のサイクルを持つ場合の数は
+   各 $a_i \quad (i = 1, 2, \cdots n)$ に対し,
+   $a_i = i$ でなく, $a_i$ がすでに選んだ数字でなければよいので
+   $ (n - 1) \cdot (n - 2) \cdots 1 = (n - 1)!$ 個となる.
+   よって長さ $n$ のサイクルを持つ確率は
+   \begin{equation*}
+    \frac{(n - 1)!} {n!} = \frac{1} {n}
+   \end{equation*}
+  となる.
+   \item 長さ $k \quad (\frac{n+1} {2} \le k \le n - 1)$ のサイクルを持つとき
+  \end{enumerate}
+  長さ $n - k$ 以下と長さ $k$ のサイクルを持つことになるので
+  長さ $k$ のサイクルを持つ場合の数は
+  どの  $n - k$ 個の $a_{i}$ が
+  長さ $n - k$ 以下のサイクルを持つかで $_n C _{n - k}$ 通りあり,
+  $n - k$ におけるサイクルの総数は $(n - k)!$ 個である.
+  そして残りの$k$ 個の $a_i$ が長さ $k$ のサイクルとなればよく,
+  その個数は $n$ の場合と同様に考え,  $(k - 1)!$ 個であるから
+  $_n C _{n - k} \cdot (n - k)! \cdot (k - 1)!
+  = n \cdot (n - 1) \cdots (k + 1) \cdot (k - 1)!$
+  となる.
+  よって長さ $k$ のサイクルを持つ確率は
+   \begin{equation*}
+    \frac{n \cdot (n - 1) \cdots (k + 1) \cdot (k - 1)!} {n!} = \frac{1} {k}
+   \end{equation*}
+  となる.
+  \setcounter{prob}{3}
+  よって, 求める確率 $p$ は \prob $(3)$ より,
+  \begin{equation*}
+    p = \sum _{k = \frac{n + 1} {2}} ^ {n} {\frac{1} {k}}
+   > \log(n + 1) - \log \left(\frac{n + 1} {2} \right)
+   =  \log(n + 1) - \log(n + 1) + \log2
+   =\log2
+  \end{equation*}
+  よって示された.
+ \end{pf}
+\end{document}
